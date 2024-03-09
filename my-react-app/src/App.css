@@ -1,0 +1,560 @@
+/* Import Hind font-family from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* <---------- User Font Selections ------------> */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Hairline&family=JetBrains+Mono:wght@400;700&family=Lato:wght@400;700&family=League+Spartan:wght@400;700&family=Lexend:wght@400;700&family=Montserrat:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* 
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Bungee Hairline', sans-serif;
+font-family: 'JetBrains Mono', monospace;
+font-family: 'Lato', sans-serif;
+font-family: 'League Spartan', sans-serif;
+font-family: 'Lexend', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+.canvas-toggle-light {
+  border-radius: 5px;
+  background-color: white;
+  height: 70px;
+  width: 70px;
+}
+
+.canvas-toggle-dark {
+  border-radius: 5px;
+  background-color: black;
+  height: 70px;
+  width: 70px;
+}
+
+.canvas-toggle-transparent {
+  border-radius: 5px;
+  height: 70px;
+  width: 70px;
+  background-size: cover; /* Ensure the background covers the div */
+  background-position: center; /* Center the background image */
+  display: inline-block; /* This makes the div's size adjust to its content */
+}
+
+.bebasneue-regular {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+}
+.bungeehairline-regular {
+  font-family: 'Bungee Hairline', sans-serif;
+  font-weight: 400;
+}
+.jetbrains-mono-regular {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 400;
+}
+.jetbrains-mono-bold {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+}
+.lato-regular {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+.lato-bold {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.leaguespartan-regular {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 400;
+}
+.leaguespartan-bold {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+}
+.lexend-regular {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+}
+.lexend-bold {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
+}
+.montserrat-regular {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}r
+.montserrat-bold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.robocondensed-regular {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+}
+.robocondensed-bold {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 700;
+}
+
+.App {
+    background-color: #1B1B1F;
+}
+
+.bg-main {
+  background: #26262D;
+}
+
+.bg-main {
+    background: #26262D;
+}
+
+.box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.bg-box {
+    background: rgb(25,25,34);
+    background: radial-gradient(circle, rgba(25,25,34,1) 0%, rgba(21,21,28,1) 100%);
+    min-width: 400px;
+}
+
+.divider-line {
+    border-bottom: 1px solid #26262D; /* Thin bottom border */
+}
+
+.square-color-picker {
+    width: 20px; /* Set to desired square size */
+    height: 20px; /* Same as width to make it square */
+    border: 1px ridge #484855;
+    padding: 0; /* Removes padding */
+    cursor: pointer; /* Optional: changes cursor on hover */
+  }
+  
+  /* Specific styles for WebKit browsers to remove default styling */
+  .square-color-picker::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+  
+  .square-color-picker::-webkit-color-swatch {
+    border: none;
+  }
+
+.top-nav {
+  background-color: #26262D;
+  z-index: 1000; /* Ensures the navbar is above other content */
+  position: relative; /* Adjust based on your layout. Could be 'absolute' or 'fixed' at the top */
+}
+
+.top-nav-text {
+ font-family: 'League Spartan', sans-serif;
+ font-weight: 400;
+ font-size: 17px;
+ color:#B8B8B8;
+}
+
+.admin-text {
+    font-family: League+Spartan;
+    font-weight: 500;
+    color: #B8B8B8;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.toolbar-header {
+    font-family: League+Spartan;
+    font-weight: 600;
+    color: #B8B8B8;
+    font-size: 13px;
+    background: rgb(56,56,70);
+    background: linear-gradient(90deg, rgba(56,56,70,1) 0%, rgba(46,46,57,1) 100%);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 5px;
+}
+.toolbar-text {
+    font-family: League+Spartan;
+    font-weight: 400;
+    color: #A7A6A6;
+    font-size: 12px;
+}
+
+.input-field {
+    font-family: 'League Spartan', sans-serif; /* Ensure proper font-family declaration */
+    padding: 6px 12px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 13px;
+    color: rgb(247, 248, 248);
+    height: 25px;
+    appearance: none;
+    transition: box-shadow 0.15s ease 0s;
+}
+
+.input-field:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(114, 114, 214, 1);
+    background: rgb(31, 32, 35); /* Maintain the initial background color */
+}
+
+/* Add an extra element around your input field to simulate the gradient border */
+.input-field-wrapper {
+    border-radius: 5px; /* Slightly larger than the input-field to show the gradient border */
+    background: linear-gradient(90deg, rgba(114,114,214,1) 0%, rgba(114,114,214,1) 46%, rgba(68,68,117,1) 100%);
+    padding: 1px; /* This padding effectively becomes the gradient border */
+}
+
+.input-field-font {
+  font-family: 'League Spartan', sans-serif; /* Ensure proper font-family declaration */
+  padding: 6px 12px;
+  background: rgb(31, 32, 35);
+  border: 1px solid rgb(60, 63, 68);
+  border-radius: 4px;
+  font-size: 14px;
+  color: rgb(247, 248, 248);
+  height: 30px;
+  appearance: none;
+  transition: box-shadow 0.15s ease 0s;
+}
+
+.input-field-font:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(114, 114, 214, 1);
+  background: rgb(31, 32, 35); /* Maintain the initial background color */
+}
+
+/* Add an extra element around your input field to simulate the gradient border */
+.input-field-font-wrapper {
+  border-radius: 5px; /* Slightly larger than the input-field to show the gradient border */
+  background: linear-gradient(90deg, rgba(114,114,214,1) 0%, rgba(114,114,214,1) 46%, rgba(68,68,117,1) 100%);
+  padding: 1px; /* This padding effectively becomes the gradient border */
+}
+
+
+.submit-btn {
+  margin: 10px;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-family: League+Spartan;
+  font-weight: 600;
+  font-size: 11px;
+  box-shadow: 0px 0px 14px -7px #000000;
+  background: rgb(114,114,214);
+  background: radial-gradient(circle, rgba(114,114,214,1) 0%, rgba(99,99,179,1) 46%, rgba(93,93,167,1) 100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.submit-btn:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.submit-btn:active {
+  transform: scale(0.95);
+}
+    
+
+.size-selector {
+    background-color: #0F0F12;
+    color: #A7A6A6;
+    border: none;
+    border-radius: 5px;
+}
+
+.active-button {
+    border: 1px solid grey;
+  }
+
+
+.range-input-field {
+    max-width: 60px;
+    font-family: 'League Spartan', sans-serif; /* Ensure proper font-family declaration */
+    padding: 6px 12px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 13px;
+    color: rgb(247, 248, 248);
+    height: 25px;
+    appearance: none;
+    transition: box-shadow 0.15s ease 0s;
+    font-weight: 300;
+}
+
+.range-input-field:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(114, 114, 214, 1);
+    background: rgb(31, 32, 35); /* Maintain the initial background color */
+}
+
+/* Add an extra element around your input field to simulate the gradient border */
+.range-input-field-wrapper {
+    border-radius: 5px; /* Slightly larger than the range-input-field to show the gradient border */
+    background: linear-gradient(90deg, rgba(114,114,214,1) 0%, rgba(114,114,214,1) 46%, rgba(68,68,117,1) 100%);
+    padding: 1px; /* This padding effectively becomes the gradient border */
+}
+
+
+.diameter-input-field {
+    max-width: 60px;
+    font-family: 'League Spartan', sans-serif; /* Ensure proper font-family declaration */
+    padding: 6px 12px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 13px;
+    color: rgb(247, 248, 248);
+    height: 25px;
+    appearance: none;
+    transition: box-shadow 0.15s ease 0s;
+}
+
+.diameter-input-field:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(114, 114, 214, 1);
+    background: rgb(31, 32, 35); /* Maintain the initial background color */
+}
+
+/* Add an extra element around your input field to simulate the gradient border */
+.diameter-input-field-wrapper {
+    border-radius: 5px; /* Slightly larger than the diameter-input-field to show the gradient border */
+    background: linear-gradient(90deg, rgba(114,114,214,1) 0%, rgba(114,114,214,1) 46%, rgba(68,68,117,1) 100%);
+    padding: 1px; /* This padding effectively becomes the gradient border */
+}
+
+  
+.toolbar-bg {
+    background: rgb(25,25,34);
+    background: radial-gradient(circle, rgba(25,25,34,1) 0%, rgba(21,21,28,1) 100%);
+    border-radius: 10px;
+}
+
+.reset-btn {
+    margin: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-family: League+Spartan;
+    font-weight: 600;
+    font-size: 15px;
+    box-shadow: 0px 0px 14px -7px #000000;
+    background: rgb(114,114,214);
+    background: radial-gradient(circle, rgba(114,114,214,1) 0%, rgba(99,99,179,1) 46%, rgba(93,93,167,1) 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .reset-btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .reset-btn:active {
+    transform: scale(0.95);
+  }
+
+  .render-btn {
+    margin: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-family: League+Spartan;
+    font-weight: 600;
+    font-size: 15px;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(114, 114, 214, 1);
+    background: rgb(31, 32, 35);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .render-btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .render-btn:active {
+    transform: scale(0.95);
+  }
+
+  .create-btn {
+    margin: 10px;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    font-family: League+Spartan;
+    font-weight: 600;
+    font-size: 15px;
+    outline: none;
+    background: rgb(18,98,31);
+    background: linear-gradient(130deg, rgba(18,98,31,1) 0%, rgba(24,131,42,1) 48%, rgba(19,105,34,1) 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .create-btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .create-btn:active {
+    transform: scale(0.95);
+  }
+
+  .radio-btn {
+    border: solid;
+    background: rgb(31, 32, 35);
+    cursor: pointer;
+    accent-color: #7272D6;
+  }
+
+  .ring-thickness-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    background: none;
+  }
+  
+  .ring-thickness-btn img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ring-thickness-btn.active {
+    border-color: rgb(114, 114, 214);
+  }
+  
+  .ring-thickness-btn.active img {
+    filter: brightness(80%);
+  }
+
+  .dashboard-manager {
+    max-width: 1200px;
+    min-height: 800px;
+    background: #26262D;
+  }
+
+  .component-title {
+    font-family: League+Spartan;
+    font-weight: 500;
+    color: #A7A6A6;
+    font-size: 15px;
+}
+
+.component-body {
+  font-family: League+Spartan;
+  font-weight: 400;
+  color: #A7A6A6;
+  font-size: 12px;
+}
+
+.bg-box-component {
+  background: rgb(25, 25, 34);
+  background: radial-gradient(circle, rgba(25, 25, 34, 1) 0%, rgba(21, 21, 28, 1) 100%);
+  min-width: 400px;
+  border-radius: 10px;
+  transition: border 0.3s ease-in-out; /* Smooth transition for the border */
+}
+
+.bg-box-component:hover {
+  border: 1px solid #FFFFFF; /* Change the border color as needed */
+}
+
+.logo-nav {
+  height: 80px;
+  width: auto;
+}
+
+.social-icon {
+  height: 40px;
+  width: auto;
+  padding: 10px;
+}
+
+.hero-title {
+  font-family: League+Spartan;
+  font-weight: 800;
+  color: #FFFFFF;
+  font-size: 80px;
+  text-align:left; 
+}
+  
+.hero-body {
+  font-family: League+Spartan;
+  font-weight: 400;
+  color: #B8B8B8;
+  font-size: 17px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.footer-text {
+  font-family: League+Spartan;
+  font-weight: 400;
+  color: #B8B8B8;
+  font-size: 17px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.footer-bg {
+  background: rgb(25,25,34);
+  background: radial-gradient(circle, rgba(25,25,34,1) 0%, rgba(21,21,28,1) 100%);
+}
+
+.customOverlay {
+  background: rgba(36, 123, 160, 0.7);
+}
+.customModal {
+  background: rgb(25,25,34);
+  max-width: 300px;
+  width: 100%;
+}
+
+.bg-box {
+  background: rgb(25,25,34);
+  background: radial-gradient(circle, rgba(25,25,34,1) 0%, rgba(21,21,28,1) 100%);
+  min-width: 400px;
+}
